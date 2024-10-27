@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Figtree', sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.contenedor {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+    margin-top: 12px;
+}
+
+footer {
+    margin-top: 35px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+    footer p {
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.72);
+    }
+
+header .material-symbols-outlined {
+    font-size: 32px;
+}
+
+h1 {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.seccion {
+    margin-bottom: 30px;
+}
+
+    .seccion h2 {
+        font-size: 22px;
+        font-weight: 500;
+        margin-bottom: 12px;
+    }
+
+.tarjeta_ejercicio {
+    background-color: #212020;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    color: #ffffff;
+    transition: background 0.3s;
+}
+
+.info_ejercicio {
+    display: flex;
+    flex-direction: column;
+}
+
+.tarjeta_ejercicio span {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.tarjeta_ejercicio p {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.72);
+    margin-top: 4px;
+    margin-right: 20px;
+}
+
+.bg_verde {
+    background-image: url(../../assets/img/tarjetas/pecho_card_bg.png);
+    background-repeat: no-repeat;
+}
+
+.bg_azul {
+    background-image: url(../../assets/img/tarjetas/brazo_card_bg.png);
+    background-repeat: no-repeat;
+}
+
+.bg_rojo {
+    background-image: url(../../assets/img/tarjetas/antebrazo_card_bg.png);
+    background-repeat: no-repeat;
+}
+
+.bg_lila {
+    background-image: url(../../assets/img/tarjetas/espalda_card_bg.png);
+    background-repeat: no-repeat;
+}
+
+.bg_naranja {
+    background-image: url(../../assets/img/tarjetas/pierna_card_bg.png);
+    background-repeat: no-repeat;
+}
+
+.material-symbols-outlined {
+    font-size: 24px;
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .contenedor {
+        padding: 15px;
+    }
+
+    .tarjeta_ejercicio {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .contenedor {
+        padding: 25px;
+    }
+
+    .tarjeta_ejercicio {
+        width: 100%;
+        max-width: 100%;
+    }
+}
