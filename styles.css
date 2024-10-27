@@ -10,7 +10,7 @@ body {
     color: #ffffff;
 }
 
-.container {
+.contenedor {
     max-width: 500px;
     margin: 0 auto;
     padding: 20px;
@@ -19,16 +19,16 @@ body {
 header {
     display: flex;
     align-items: center;
-    justify-content: center; /* Centra el contenido horizontalmente */
+    justify-content: center;
     gap: 10px;
-    margin-bottom: 20px;
-    margin-top: 15px;
+    margin-bottom: 30px;
+    margin-top: 12px;
 }
 
 footer {
-    margin-top: 30px;
+    margin-top: 35px;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
     footer p {
@@ -36,26 +36,26 @@ footer {
         color: rgba(255, 255, 255, 0.72);
     }
 
-    header .material-symbols-outlined {
-        font-size: 32px;
-    }
+header .material-symbols-outlined {
+    font-size: 32px;
+}
 
 h1 {
     font-size: 26px;
     font-weight: 600;
 }
 
-.section {
-    margin-bottom: 20px;
+.seccion {
+    margin-bottom: 30px;
 }
 
-    .section h2 {
+    .seccion h2 {
         font-size: 22px;
         font-weight: 500;
         margin-bottom: 12px;
     }
 
-.card {
+.tarjeta_ejercicio {
     background-color: #212020;
     padding: 20px;
     border-radius: 10px;
@@ -67,20 +67,45 @@ h1 {
     transition: background 0.3s;
 }
 
-.exercise-info {
+.info_ejercicio {
     display: flex;
     flex-direction: column;
 }
 
-.card span {
+.tarjeta_ejercicio span {
     font-weight: 500;
     font-size: 20px;
 }
 
-.card p {
+.tarjeta_ejercicio p {
     font-size: 14px;
     color: rgba(255, 255, 255, 0.72);
     margin-top: 4px;
+}
+
+.bg_verde {
+    background-image: url(assets/pecho_card_bg.png);
+    background-repeat: no-repeat;
+}
+
+.bg_azul {
+    background-image: url(assets/brazo_card_bg.png);
+    background-repeat: no-repeat;
+}
+
+.bg_rojo {
+    background-image: url(assets/antebrazo_card_bg.png);
+    background-repeat: no-repeat;
+}
+
+.bg_lila {
+    background-image: url(assets/espalda_card_bg.png);
+    background-repeat: no-repeat;
+}
+
+.bg_naranja {
+    background-image: url(assets/pierna_card_bg.png);
+    background-repeat: no-repeat;
 }
 
 .material-symbols-outlined {
@@ -89,22 +114,22 @@ h1 {
 }
 
 @media (max-width: 768px) {
-    .container {
+    .contenedor {
         padding: 15px;
     }
 
-    .card {
+    .tarjeta_ejercicio {
         width: 100%;
         max-width: 100%;
     }
 }
 
 @media (max-width: 480px) {
-    .container {
-        padding: 10px;
+    .contenedor {
+        padding: 25px;
     }
 
-    .card {
+    .tarjeta_ejercicio {
         width: 100%;
         max-width: 100%;
     }
