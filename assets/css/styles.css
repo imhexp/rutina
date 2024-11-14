@@ -67,21 +67,21 @@ h1 {
     transition: background 0.3s;
 }
 
+    .tarjeta_ejercicio span {
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+    .tarjeta_ejercicio p {
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.72);
+        margin-top: 4px;
+        margin-right: 20px;
+    }
+
 .info_ejercicio {
     display: flex;
     flex-direction: column;
-}
-
-.tarjeta_ejercicio span {
-    font-weight: 500;
-    font-size: 20px;
-}
-
-.tarjeta_ejercicio p {
-    font-size: 14px;
-    color: rgba(255, 255, 255, 0.72);
-    margin-top: 4px;
-    margin-right: 20px;
 }
 
 .bg_verde {
@@ -101,6 +101,11 @@ h1 {
 
 .bg_lila {
     background-image: url(../../assets/img/tarjetas/espalda_card_bg.png);
+    background-repeat: no-repeat;
+}
+
+.bg_alt {
+    background-image: url(../../assets/img/tarjetas/alt_card_bg.png);
     background-repeat: no-repeat;
 }
 
