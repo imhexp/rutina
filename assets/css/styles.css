@@ -21,7 +21,7 @@ header {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     margin-top: 12px;
 }
 
@@ -60,19 +60,26 @@ h1 {
     padding: 20px;
     border-radius: 10px;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
     margin-bottom: 10px;
     color: #ffffff;
     transition: background 0.3s;
 }
 
-    .tarjeta_ejercicio span {
+.contenido_tarjeta {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+    .contenido_tarjeta span {
         font-weight: 500;
         font-size: 20px;
     }
 
-    .tarjeta_ejercicio p {
+    .contenido_tarjeta p {
         font-size: 14px;
         color: rgba(255, 255, 255, 0.72);
         margin-top: 4px;
@@ -83,6 +90,26 @@ h1 {
     display: flex;
     flex-direction: column;
 }
+
+.ejercicio_alt {
+    margin-top: 14px;
+    padding-top: 14px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    width: 100%;
+}
+
+    .ejercicio_alt span {
+        font-weight: 500;
+        font-size: 18px;
+        color: rgba(255, 255, 255, 0.85);
+    }
+
+    .ejercicio_alt p {
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.72);
+        margin-top: 4px;
+    }
+
 
 .bg_verde {
     background-image: url(../../assets/img/tarjetas/pecho_card_bg.png);
@@ -104,9 +131,10 @@ h1 {
     background-repeat: no-repeat;
 }
 
-.bg_alt {
-    background-image: url(../../assets/img/tarjetas/alt_card_bg.png);
+.bg_calentar {
+    background-image: url(../../assets/img/tarjetas/calentamiento_card_bg.png);
     background-repeat: no-repeat;
+    margin-bottom: 30px;
 }
 
 .bg_naranja {
