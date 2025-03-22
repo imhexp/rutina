@@ -131,10 +131,9 @@ h1 {
     background-repeat: no-repeat;
 }
 
-.bg_calentar {
+.bg_amarillo {
     background-image: url(../../assets/img/tarjetas/calentamiento_card_bg.png);
     background-repeat: no-repeat;
-    margin-bottom: 30px;
 }
 
 .bg_naranja {
