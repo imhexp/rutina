@@ -27,7 +27,7 @@ header {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
     margin-top: 12px;
 }
 
@@ -118,18 +118,18 @@ h1 {
 
 .selector_rutina {
     margin-bottom: 25px;
-    padding: 20px;
+    padding: 15px;
     background: #212020;
     border-radius: 10px;
     display: flex;
     justify-content: center;
-    gap: 25px;
-    font-size: 18px;
+    gap: 16px;
+    font-size: 15px;
     color: rgba(255, 255, 255, 0.8);
 }
 
 .selector_rutina input[type="radio"] {
-    margin-right: 3px;
+    margin-right: 1.5px;
 }
 
 
