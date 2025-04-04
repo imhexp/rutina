@@ -16,6 +16,12 @@ body {
     padding: 20px;
 }
 
+    .contenedor h2 {
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 12px;
+    }
+
 header {
     display: flex;
     align-items: center;
@@ -109,6 +115,22 @@ h1 {
         color: rgba(255, 255, 255, 0.72);
         margin-top: 4px;
     }
+
+.selector_rutina {
+    margin-bottom: 25px;
+    padding: 20px;
+    background: #212020;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.selector_rutina input[type="radio"] {
+    margin-right: 3px;
+}
 
 
 .bg_verde {

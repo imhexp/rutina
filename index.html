@@ -21,8 +21,16 @@
             <span class="material-symbols-outlined">exercise</span>
             <h1>Rutina Gimnasio</h1>
         </header>
-        <section class="seccion">
-            <h2><i class="fa-solid fa-square-1"> ‎</i> Pecho y tríceps</h2>
+
+        <h2><i class="fa-solid fa-gear"></i> Selecciona tu rutina:</h2>
+        <div class="selector_rutina">
+            <label><input type="radio" name="orden" value="orden1" checked> Rutina <i class="fa-solid fa-square-1"></i></label>
+            <label><input type="radio" name="orden" value="orden2"> Rutina <i class="fa-solid fa-square-2"></i></label>
+            <label><input type="radio" name="orden" value="orden3"> Rutina <i class="fa-solid fa-square-3"></i></label>
+        </div>
+
+        <section class="seccion" id="1">
+            <h2>Pecho y tríceps</h2>
             <div class="tarjeta_ejercicio bg_verde">
                 <div class="contenido_tarjeta">
                     <div class="info_ejercicio">
@@ -78,8 +86,8 @@
             </div>
         </section>
 
-        <section class="seccion">
-            <h2><i class="fa-solid fa-square-2"> ‎</i> Dorsales y antebrazo</h2>
+        <section class="seccion" id="2">
+            <h2>Dorsales y antebrazo</h2>
             <div class="tarjeta_ejercicio bg_lila">
                 <div class="contenido_tarjeta">
                     <div class="info_ejercicio">
@@ -139,8 +147,8 @@
             </div>
         </section>
 
-        <section class="seccion">
-            <h2><i class="fa-solid fa-square-3"> ‎</i> Pierna</h2>
+        <section class="seccion" id="3">
+            <h2>Pierna</h2>
             <div class="tarjeta_ejercicio bg_naranja">
                 <div class="contenido_tarjeta">
                     <div class="info_ejercicio">
@@ -200,8 +208,8 @@
             </div>
         </section>
 
-        <section class="seccion">
-            <h2><i class="fa-solid fa-square-4"> ‎</i> Pecho, bíceps y hombro</h2>
+        <section class="seccion" id="4">
+            <h2>Pecho, bíceps y hombro</h2>
             <div class="tarjeta_ejercicio bg_verde">
                 <div class="contenido_tarjeta">
                     <div class="info_ejercicio">
@@ -262,8 +270,8 @@
 
         </section>
 
-        <section class="seccion">
-            <h2><i class="fa-solid fa-square-5"> ‎</i> Espalda y hombro</h2>
+        <section class="seccion" id="5">
+            <h2>Espalda y hombro</h2>
             <div class="tarjeta_ejercicio bg_lila">
                 <div class="contenido_tarjeta">
                     <div class="info_ejercicio">
@@ -323,8 +331,8 @@
             </div>
         </section>
 
-        <section class="seccion">
-            <h2><i class="fa-solid fa-square-6"> ‎</i> Abdominales y cardio</h2>
+        <section class="seccion" id="6">
+            <h2>Abdominales y cardio</h2>
             <div class="tarjeta_ejercicio bg_amarillo">
                 <div class="contenido_tarjeta">
                     <div class="info_ejercicio">
@@ -377,9 +385,61 @@
         </section>
 
         <footer>
-            <p>🕔 Última actualización: 28/03/25</p>
+            <p>🕔 Última actualización: 04/04/25</p>
             <p>🛠️ Hecho por Héctor y David</p>
         </footer>
     </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const ordenes = {
+                orden1: [
+                    '1',
+                    '2',
+                    '3',
+                    '4',
+                    '5',
+                    '6',
+                ],
+                orden2: [
+                    '2',
+                    '1',
+                    '3',
+                    '5',
+                    '4',
+                    '6',
+                ],
+                orden3: [
+                    '4',
+                    '6',
+                    '2',
+                    '1',
+                    '3',
+                    '5',
+                ]
+            };
+
+            const contenedorRutina = document.querySelector('.contenedor');
+
+            function reordenarDias(rutina) {
+                const orden = ordenes[rutina];
+                const footer = document.querySelector('footer');
+                orden.forEach(id => {
+                    const seccion = document.getElementById(id);
+                    contenedorRutina.insertBefore(seccion, footer);
+                });
+            }
+
+            const botones = document.querySelectorAll('input[name="orden"]');
+            botones.forEach(radio => {
+                radio.addEventListener('change', () => {
+                    reordenarDias(radio.value);
+                });
+            });
+
+            const ordenInicio = document.querySelector('input[name="orden"]:checked').value;
+            reordenarDias(ordenInicio);
+        });
+    </script>
 </body>
 </html>
