@@ -118,19 +118,19 @@ h1 {
 
 .selector_rutina {
     margin-bottom: 25px;
-    padding: 15px;
+    padding: 20px;
     background: #212020;
     border-radius: 10px;
     display: flex;
     justify-content: center;
-    gap: 16px;
-    font-size: 15px;
+    gap: 18px;
+    font-size: 17px;
     color: rgba(255, 255, 255, 0.8);
 }
 
-.selector_rutina input[type="radio"] {
-    margin-right: 1.5px;
-}
+    .selector_rutina input[type="radio"] {
+        margin-right: 2px;
+    }
 
 
 .bg_verde {
@@ -168,24 +168,23 @@ h1 {
     color: #ffffff;
 }
 
-@media (max-width: 768px) {
-    .contenedor {
-        padding: 15px;
-    }
-
-    .tarjeta_ejercicio {
-        width: 100%;
-        max-width: 100%;
-    }
-}
-
 @media (max-width: 480px) {
     .contenedor {
-        padding: 25px;
+        padding: 30px;
     }
 
     .tarjeta_ejercicio {
         width: 100%;
         max-width: 100%;
     }
+
+    .selector_rutina {
+        gap: 15px;
+        font-size: 15px;
+        padding: 15px;
+    }
+    
+        .selector_rutina input[type="radio"] {
+            margin-right: 1.5px;
+        }
 }
