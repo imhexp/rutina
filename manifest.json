@@ -5,6 +5,7 @@
     "display": "standalone",
     "background_color": "#121212",
     "theme_color": "#532584",
+    "description": "Mira la rutina del gimnasio desde tu dispositivo Android o iOS.",
     "icons": [
       {
         "src": "assets/img/icons/pwa/192.png",
@@ -14,7 +15,8 @@
       {
         "src": "assets/img/icons/pwa/512.png",
         "sizes": "512x512",
-        "type": "image/png"
+        "type": "image/png",
+        "purpose": "maskable"
       },
       {
         "src": "assets/img/icons/pwa/1024.png",
