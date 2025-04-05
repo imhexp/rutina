@@ -26,11 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
   
-    if (ios) {
-      if (window.navigator.standalone) {
-        if (novedad) novedad.style.display = 'none';
-      }
-    } else if (android) {
+    if (android || ios) {
       if (window.matchMedia('(display-mode: standalone)').matches) {
         if (novedad) novedad.style.display = 'none';
       }
