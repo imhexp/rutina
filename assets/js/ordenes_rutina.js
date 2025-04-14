@@ -1,36 +1,15 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // ordenes/variantes de la rutina. la rutina 1 es la normal, la 2 y 3 son cambios de orden.
+    // lista de ordenes a elegir
     const ordenes = {
-        orden1: [
-            '1',
-            '2',
-            '3',
-            '4',
-            '5',
-            '6',
-        ],
-        orden2: [
-            '2',
-            '1',
-            '3',
-            '5',
-            '4',
-            '6',
-        ],
-        orden3: [
-            '4',
-            '6',
-            '2',
-            '1',
-            '3',
-            '5',
-        ]
+        orden1: ['1', '2', '3', '4', '5', '6'], // el normal
+        orden2: ['2', '1', '3', '5', '4', '6'], // algunas cosas estan dadas la vuelta
+        orden3: ['4', '6', '2', '1', '3', '5'] // cardio el martes
     };
 
-    // contenedor de la rutina principal
+    // contenedor de la rutina
     const contenedorRutina = document.querySelector('.contenedor');
 
-    // función para scramblear la rutina teniendo en cuenta el footer
+    // reordenar dias segun rutina seleccionada o guardada
     function reordenarDias(rutina) {
         const orden = ordenes[rutina];
         const footer = document.querySelector('footer');
@@ -38,17 +17,29 @@ document.addEventListener('DOMContentLoaded', () => {
             const seccion = document.getElementById(id);
             contenedorRutina.insertBefore(seccion, footer);
         });
+        localStorage.setItem('orden_seleccionado', rutina);
     }
 
-    // botones de la rutina y reordenación según rutina seleccionada
+    // radios (botones) con las opciones de rutina
     const botones = document.querySelectorAll('input[name="orden"]');
+
+    // escuchar si se ha seleccionado una rutina en específico y cargarla
     botones.forEach(radio => {
         radio.addEventListener('change', () => {
             reordenarDias(radio.value);
         });
     });
 
-    // se aplica un orden 'default' al abrir la página por primera vez. por defecto, es el radio que en el html tiene el atributo 'checked'
-    const ordenInicio = document.querySelector('input[name="orden"]:checked').value;
-    reordenarDias(ordenInicio);
+    // cargado del orden previamente guardado desde localstorage
+    const ordenGuardado = localStorage.getItem('orden_seleccionado');
+    const ordenOnLoad = ordenGuardado || document.querySelector('input[name="orden"]:checked').value;
+
+    // si se ha podido cargar desde localstorage, seleccionar el radio segun lo guardado
+    if (ordenGuardado) {
+        const botonSeleccionado = document.querySelector(`input[name="orden"][value="${ordenGuardado}"]`);
+        if (botonSeleccionado) botonSeleccionado.checked = true;
+    }
+
+    // reordenar la rutina independientemente de si hay datos previos en localstorage o no
+    reordenarDias(ordenOnLoad);
 });
