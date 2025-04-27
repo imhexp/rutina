@@ -93,7 +93,6 @@ h1 {
     }
 
 .tarjeta_noticia {
-    background-image: url(../../assets/img/tarjetas/noticia_card_bg.png);
     background-repeat: no-repeat;
     padding: 20px;
     border-radius: 10px;
@@ -196,6 +195,16 @@ h1 {
 
 .bg_naranja {
     background-image: url(../../assets/img/tarjetas/pierna_card_bg.png);
+    background-repeat: no-repeat;
+}
+
+.bg_advertencia_dia {
+    background-image: url(../../assets/img/tarjetas/advertencia_dia_card_bg.png);
+    background-repeat: no-repeat;
+}
+
+.bg_noticia_default {
+    background-image: url(../../assets/img/tarjetas/noticia_card_bg.png);
     background-repeat: no-repeat;
 }
 
