@@ -81,12 +81,12 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="contenido_tarjeta">
                 <div class="info_ejercicio">
                     <span>Sentadilla hack</span>
-                    <p>4 sets de 12-14 reps.</p>
+                    <p>4 sets de 12-14 reps. Si normalmente haces este ejercicio en pierna 1, no lo hagas ahora. Haz una de las otras dos alternativas.</p>
                 </div>
             </div>
             <div class="ejercicio_alt">
                 <span>Prensa a 45 grados</span>
-                <p>4 sets de 12-14 reps.</p>
+                <p>4 sets de 12-14 reps. Si normalmente haces este ejercicio en pierna 1, no lo hagas ahora. Haz una de las otras dos alternativas.</p>
             </div>
             <div class="ejercicio_alt">
                 <span>Sentadilla búlgara</span>
