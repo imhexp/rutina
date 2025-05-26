@@ -42,10 +42,6 @@ footer {
         color: rgba(255, 255, 255, 0.72);
     }
 
-header .material-symbols-outlined {
-    font-size: 32px;
-}
-
 h1 {
     font-size: 26px;
     font-weight: 600;
@@ -152,7 +148,7 @@ h1 {
         margin-right: 7.5px;
     }
 
-.selector_rutina {
+.selector_rutina{
     margin-bottom: 25px;
     padding: 20px;
     background: #212020;
@@ -164,9 +160,17 @@ h1 {
     color: rgba(255, 255, 255, 0.8);
 }
 
-    .selector_rutina input[type="radio"] {
-        margin-right: 2px;
-    }
+.selector_orden {
+    margin-bottom: 25px;
+    padding: 20px;
+    background: #212020;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    font-size: 17px;
+    color: rgba(255, 255, 255, 0.8);
+}
 
 .selector_dia {
     margin-bottom: 25px;
@@ -179,10 +183,6 @@ h1 {
     font-size: 17px;
     color: rgba(255, 255, 255, 0.8);
 }
-
-    .selector_dia input[type="checkbox"] {
-        margin-right: 2px;
-    }
 
 .contenedor_dia h2 {
     font-size: 20px;
@@ -231,11 +231,6 @@ h1 {
     background-repeat: no-repeat;
 }
 
-.material-symbols-outlined {
-    font-size: 24px;
-    color: #ffffff;
-}
-
 @media (max-width: 480px) {
     .contenedor {
         padding: 30px;
@@ -248,11 +243,13 @@ h1 {
 
     .selector_rutina {
         gap: 15px;
+        font-size: 18px;
+        padding: 15px;
+    }
+
+    .selector_orden {
+        gap: 15px;
         font-size: 15px;
         padding: 15px;
     }
-    
-        .selector_rutina input[type="radio"] {
-            margin-right: 1.5px;
-        }
 }

@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+function cambiarOrden() {
     // ordenes de la rutina
     const ordenes = {
         orden1: ['1', '2', '3', '4', '5', '6'], // el normal
@@ -207,4 +207,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // cargar ejercicios iniciales sin sobrescribir el estado guardado
     actualizarVista();
-});
+}
