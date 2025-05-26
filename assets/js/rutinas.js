@@ -334,6 +334,16 @@ const rutinas = {
         </section>`,
 
     fullbody: `
+        <div class="tarjeta_noticia bg_noticia_default">
+            <div class="noticia_contenido">
+                <div class="info_noticia">
+                    <span><i class="fa-solid fa-warning fa-fw"></i> Rutina en pruebas</span>
+                    <p>Estamos probando una nueva rutina full-body hecha por David, como siempre.</p>
+                    <p>Van a haber muchos cambios hasta que lleguemos a una versión que nos guste, pero todavía no es usable.</p>
+                    <p>Faltan los órdenes algunos ejercicios están mal. Por ahora, es mejor usar la rutina actual.</p>
+                </div>
+            </div>
+        </div>
         <section class="seccion" id="fb1">
             <h2>Lunes</h2>
             <div class="tarjeta_ejercicio bg_verde">
@@ -375,7 +385,7 @@ const rutinas = {
                 <div class="contenido_tarjeta">
                     <div class="info_ejercicio">
                         <span>Extensión de cuádriceps</span>
-                        <p>4 sets de 10-12 reps.</p>
+                        <p>4 sets de 18-20 reps. Las repes lentitas, y también viene bien hacerlas asistidas.</p>
                     </div>
                 </div>
             </div>
@@ -389,7 +399,7 @@ const rutinas = {
                 </div>
                 <div class="ejercicio_alt">
                     <span>Cardio</span>
-                    <p>4 sets de 10-12 reps.</p>
+                    <p>Elíptica o cinta de correr.</p>
                 </div>
             </div>
         </section>
@@ -400,7 +410,7 @@ const rutinas = {
                 <div class="contenido_tarjeta">
                     <div class="info_ejercicio">
                         <span>Curl con mancuernas</span>
-                        <p>4 sets de 10-12 reps o lo que puedas.</p>
+                        <p>4 sets de 10-12 reps.</p>
                     </div>
                 </div>
             </div>
@@ -445,7 +455,7 @@ const rutinas = {
                 <div class="contenido_tarjeta">
                     <div class="info_ejercicio">
                         <span>Elevaciones de gemelos</span>
-                        <p>4 sets de 10-12 reps.</p>
+                        <p>4 sets de 12-14 reps.</p>
                     </div>
                 </div>
             </div>
@@ -520,7 +530,134 @@ const rutinas = {
                 </div>
                 <div class="ejercicio_alt">
                     <span>Cardio</span>
+                    <p>Elíptica o cinta de correr.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion" id="fb4">
+            <h2>Jueves</h2>
+            <div class="tarjeta_ejercicio bg_azul">
+                <div class="contenido_tarjeta">
+                    <div class="info_ejercicio">
+                        <span>Curl predicador</span>
+                        <p>4 sets de 18-20 reps. Libre o en máquina, vale en los dos lados. Hacerlas lentitas y con el agarre al nivel de los codos también viene bien.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta_ejercicio bg_lila">
+                <div class="contenido_tarjeta">
+                    <div class="info_ejercicio">
+                        <span>Remo sentado</span>
+                        <p>4 sets de 10-12 reps.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta_ejercicio bg_lila">
+                <div class="contenido_tarjeta">
+                    <div class="info_ejercicio">
+                        <span>Jalón al mentón</span>
+                        <p>4 sets de 10-12 reps.</p>
+                    </div>
+                </div>
+            </div>
+      
+            <div class="tarjeta_ejercicio bg_naranja">
+                <div class="contenido_tarjeta">
+                    <div class="info_ejercicio">
+                        <span>Curl femoral de pie</span>
+                        <p>4 sets de 10-12 reps.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta_ejercicio bg_lila">
+                <div class="contenido_tarjeta">
+                    <div class="info_ejercicio">
+                        <span>Face pull</span>
+                        <p>4 sets de 10-12 reps.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta_ejercicio bg_rojo">
+                <div class="contenido_tarjeta">
+                    <div class="info_ejercicio">
+                        <span>Pronación de antebrazo</span>
+                        <p>4 sets de 18-20 reps.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta_ejercicio bg_rojo">
+                <div class="contenido_tarjeta">
+                    <div class="info_ejercicio">
+                        <span>Supinación de antebrazo</span>
+                        <p>4 sets de 18-20 reps.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion" id="fb5">
+            <h2>Viernes</h2>
+            <div class="tarjeta_ejercicio bg_verde">
+                <div class="contenido_tarjeta">
+                    <div class="info_ejercicio">
+                        <span>Press inclinado</span>
+                        <p>4 sets de 10-12 reps o lo que puedas.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta_ejercicio bg_azul">
+                <div class="contenido_tarjeta">
+                    <div class="info_ejercicio">
+                        <span>Ex. tríceps sobre cabeza</span>
+                        <p>4 sets de 18-20 reps.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta_ejercicio bg_rojo">
+                <div class="contenido_tarjeta">
+                    <div class="info_ejercicio">
+                        <span>Extensión de muñecas</span>
+                        <p>4 sets de 10-12 reps.</p>
+                    </div>
+                </div>
+            </div>
+      
+            <div class="tarjeta_ejercicio bg_naranja">
+                <div class="contenido_tarjeta">
+                    <div class="info_ejercicio">
+                        <span>Sentadilla (cualquier variante)</span>
+                        <p>4 sets de 10-12 reps.</p>
+                    </div>
+                </div>
+                <div class="ejercicio_alt">
+                    <span>Prensa</span>
                     <p>4 sets de 10-12 reps.</p>
+                </div>
+            </div>
+
+            <div class="tarjeta_ejercicio bg_rojo">
+                <div class="contenido_tarjeta">
+                    <div class="info_ejercicio">
+                        <span>Elevaciones laterales</span>
+                        <p>4 sets de 10-12 reps.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta_ejercicio bg_naranja">
+                <div class="contenido_tarjeta">
+                    <div class="info_ejercicio">
+                        <span>Abductores</span>
+                        <p>4 sets de 10-12 reps.</p>
+                    </div>
                 </div>
             </div>
         </section>
