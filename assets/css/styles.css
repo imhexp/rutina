@@ -34,7 +34,7 @@ header {
 footer {
     margin-top: 35px;
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 12.5px;
 }
 
     footer p {
@@ -148,7 +148,7 @@ h1 {
         margin-right: 7.5px;
     }
 
-.selector_rutina{
+.selector_rutina {
     margin-bottom: 25px;
     padding: 20px;
     background: #212020;
@@ -156,7 +156,7 @@ h1 {
     display: flex;
     justify-content: center;
     gap: 18px;
-    font-size: 17px;
+    font-size: 19px;
     color: rgba(255, 255, 255, 0.8);
 }
 
@@ -168,7 +168,7 @@ h1 {
     display: flex;
     justify-content: center;
     gap: 18px;
-    font-size: 17px;
+    font-size: 19px;
     color: rgba(255, 255, 255, 0.8);
 }
 
@@ -243,13 +243,13 @@ h1 {
 
     .selector_rutina {
         gap: 15px;
-        font-size: 18px;
+        font-size: 16px;
         padding: 15px;
     }
 
     .selector_orden {
         gap: 15px;
-        font-size: 15px;
+        font-size: 16px;
         padding: 15px;
     }
 }

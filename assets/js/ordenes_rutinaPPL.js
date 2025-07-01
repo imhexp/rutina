@@ -1,4 +1,4 @@
-function cambiarOrden() {
+function cambiarOrdenPPL() {
     // ordenes de la rutina
     const ordenes = {
         orden1: ['1', '2', '3', '4', '5', '6'], // el normal
