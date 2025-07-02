@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
-// rutinas
+// rutinas (DESPLEGAR SOLO LO NECESARIO, MUY MUY LARGO, LAS RUTINAS EN EL SCRIPT ES **TEMPORAL**)
+// pendiente: cambiar formato de rutina a una API que sirva la rutina en formato JSON, para poder desarrollar el editor web de la rutina y evitar los espaguetis de códigos estos, que me rayan la cabeza
+// pendiente: devolver videos instructivos a cada ejercicio (a largo plazo y solo si el pendiente de arriba se concreta)
 const rutinas = {
     ppl: `
         <h2><i class="fa-solid fa-arrow-up-square-triangle fa-fw"></i> Orden:</h2>
@@ -10,7 +12,7 @@ const rutinas = {
         </div>
 
         <section class="seccion" id="1">
-            <h2>Pecho, tríceps y hombro (1)</h2>
+            <h2>Pecho, tríceps y hombro <i class="fa-solid fa-square-1 fa-fw"></i></h2>
             <div class="tarjeta_ejercicio bg_verde">
                 <div class="contenido_tarjeta">
                     <div class="info_ejercicio">
@@ -191,7 +193,7 @@ const rutinas = {
         </section>
 
         <section class="seccion" id="4">
-            <h2>Pecho, tríceps y hombro (2)</h2>
+            <h2>Pecho, tríceps y hombro <i class="fa-solid fa-square-2 fa-fw"></i></h2>
             <div class="tarjeta_ejercicio bg_verde">
                 <div class="contenido_tarjeta">
                     <div class="info_ejercicio">
@@ -339,11 +341,12 @@ const rutinas = {
             <div class="noticia_contenido">
                 <div class="info_noticia">
                     <span><i class="fa-fw fa-solid fa-wrench"></i> En proceso</span>
-                    <p>La rutina <b>Full body</b> está implementada, pero los órdenes, necesarios para que todos usemos la rutina, quedan pendientes.</p>
+                    <p>La rutina <b>Full Body</b> está implementada, pero los órdenes, necesarios para que todos usemos la rutina sin retrasos, quedan pendientes.</p>
                     <p>Los ordenes estarán terminados antes del <b>domingo, 6 de julio</b>.</p>
                 </div>
             </div>
         </div>
+
         <section class="seccion" id="fb1">
             <h2>Full body <i class="fa-solid fa-square-1 fa-fw"></i></h2>
             <div class="tarjeta_ejercicio bg_lila">
@@ -416,7 +419,7 @@ const rutinas = {
                 <div class="contenido_tarjeta">
                     <div class="info_ejercicio">
                         <span>Elevaciones laterales</span>
-                        <p>4 sets de 12-14 reps. Si tienes más fuerza en un hombro que en otro es mejor hacerlo en polea. Ponla a la altura de tus rodilla y pégate al mástil de la polea.</p>
+                        <p>4 sets de 12-14 reps. Si tienes más fuerza en un hombro que en otro es mejor hacerlo en polea. Ponla a la altura de tus rodillas y pégate al mástil de la polea.</p>
                     </div>
                 </div>
             </div>
@@ -636,12 +639,310 @@ const rutinas = {
             <div class="noticia_contenido">
                 <div class="info_noticia">
                     <span><i class="fa-fw fa-solid fa-wrench"></i> En proceso</span>
-                    <p>La rutina <b>Upper/Lower</b> todavía no se ha implementado en la web. Por ahora, usa otras rutinas hechas por nosotros, como la Push Pull Leg o la Full Body.</p>
-                    <p>Si no quieres esperar, accede directamente a la rutina en el documento de Google:</p>
-                    <p>https://docs.google.com/document/d/1aR_b-h6PfNlV_1HptKQxHruFoddO-dCL4EzxPW9obp4/</p>
+                    <p>La rutina <b>Upper/Lower</b> está implementada, pero los órdenes, necesarios para que todos usemos la rutina sin retrasos, quedan pendientes.</p>
+                    <p>Los ordenes estarán terminados antes del <b>domingo, 6 de julio</b>.</p>
                 </div>
             </div>
         </div>
+
+        <section class="seccion" id="up1">
+            <h2>Tren superior <i class="fa-solid fa-square-1 fa-fw"></i></h2>
+            <div class="tarjeta_ejercicio bg_verde">
+                <div class="contenido_tarjeta">
+                    <div class="info_ejercicio">
+                        <span>Press de banca</span>
+                        <p>4 sets de 8-12 reps. (o al fallo, si quieres tirar pesado)</p>
+                    </div>
+                </div>
+            </div>
+ 
+            <div class="tarjeta_ejercicio bg_lila">
+                <div class="contenido_tarjeta">
+                    <div class="info_ejercicio">
+                        <span>Remo en barra T (agarre abierto)</span>
+                        <p>4 sets de 8-12 reps. No confundir con el agarre cerrado, que enfoca el ejercicio en los dorsales.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta_ejercicio bg_lila">
+                <div class="contenido_tarjeta">
+                    <div class="info_ejercicio">
+                        <span>Jalón al pecho</span>
+                        <p>4 sets de 8-12 reps. En polea, con agarre ancho.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta_ejercicio bg_rojo">
+                <div class="contenido_tarjeta">
+                    <div class="info_ejercicio">
+                        <span>Elevaciones laterales</span>
+                        <p>4 sets de 8-12 reps. Con mancuernas o en polea (recomendado).</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta_ejercicio bg_azul">
+                <div class="contenido_tarjeta">
+                    <div class="info_ejercicio">
+                        <span>Curl martillo</span>
+                        <p>4 sets de 8-12 reps. Con mancuernas: libre o apoyándose en el banco de predicador.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta_ejercicio bg_azul">
+                <div class="contenido_tarjeta">
+                    <div class="info_ejercicio">
+                        <span>Ex. tríceps sobre la cabeza</span>
+                        <p>4 sets de 8-12 reps.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion" id="lw1">
+            <h2>Tren inferior <i class="fa-solid fa-square-1 fa-fw"></i></h2>
+            <div class="tarjeta_ejercicio bg_naranja">
+                <div class="contenido_tarjeta">
+                    <div class="info_ejercicio">
+                        <span>Sentadilla hack</span>
+                        <p>4 sets de 8-12 reps.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta_ejercicio bg_naranja">
+                <div class="contenido_tarjeta">
+                    <div class="info_ejercicio">
+                        <span>Curl femoral sentado</span>
+                        <p>4 sets de 8-12 reps.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta_ejercicio bg_naranja">
+                <div class="contenido_tarjeta">
+                    <div class="info_ejercicio">
+                        <span>Elevaciones de gemelos</span>
+                        <p>4 sets de 8-12 reps. Preferiblemente, en la máquina para hacer gemelo de pie, pero puede hacerse en una prensa a 45 grados.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta_ejercicio bg_naranja">
+                <div class="contenido_tarjeta">
+                    <div class="info_ejercicio">
+                        <span>Peso muerto</span>
+                        <p>4 sets de 8-12 reps.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta_ejercicio bg_amarillo">
+                <div class="contenido_tarjeta">
+                    <div class="info_ejercicio">
+                        <span>Elevaciones de piernas</span>
+                        <p>4 sets de 8-12 reps.</p>
+                    </div>
+                </div>
+                <div class="ejercicio_alt">
+                    <span>Cardio</span>
+                    <p>Por si no te interesa hacer abdominales. Dedícale tanto tiempo como veas conveniente.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion" id="up2">
+            <h2>Tren superior <i class="fa-solid fa-square-2 fa-fw"></i></h2>
+            <div class="tarjeta_ejercicio bg_verde">
+                <div class="contenido_tarjeta">
+                    <div class="info_ejercicio">
+                        <span>Press inclinado</span>
+                        <p>4 sets de 8-12 reps. Con mancuernas o con barra, lo que te resulte más comodo.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta_ejercicio bg_lila">
+                <div class="contenido_tarjeta">
+                    <div class="info_ejercicio">
+                        <span>Remo en barra T (agarre cerrado)</span>
+                        <p>4 sets de 8-12 reps. No confundir con el agarre abierto.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta_ejercicio bg_lila">
+                <div class="contenido_tarjeta">
+                    <div class="info_ejercicio">
+                        <span>Face pull</span>
+                        <p>4 sets de 8-12 reps.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta_ejercicio bg_azul">
+                <div class="contenido_tarjeta">
+                    <div class="info_ejercicio">
+                        <span>Curl predicador</span>
+                        <p>4 sets de 8-12 reps. Libre (barra Z) o en máquina.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta_ejercicio bg_azul">
+                <div class="contenido_tarjeta">
+                    <div class="info_ejercicio">
+                        <span>Ex. tríceps en polea</span>
+                        <p>4 sets de 8-12 reps. También se puede hacer unilateral (si te resulta más comodo).</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta_ejercicio bg_rojo">
+                <div class="contenido_tarjeta">
+                    <div class="info_ejercicio">
+                        <span>Flexión de muñeca</span>
+                        <p>4 sets de 8-12 reps. Es un curl de antebrazo supino apoyado en banco, con barra.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion" id="lw2">
+            <h2>Tren inferior <i class="fa-solid fa-square-2 fa-fw"></i></h2>
+            <div class="tarjeta_ejercicio bg_naranja">
+                <div class="contenido_tarjeta">
+                    <div class="info_ejercicio">
+                        <span>Extensión de cuádriceps</span>
+                        <p>4 sets de 8-12 reps.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta_ejercicio bg_naranja">
+                <div class="contenido_tarjeta">
+                    <div class="info_ejercicio">
+                        <span>Aductores</span>
+                        <p>4 sets de 8-12 reps.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta_ejercicio bg_naranja">
+                <div class="contenido_tarjeta">
+                    <div class="info_ejercicio">
+                        <span>Sentadilla libre</span>
+                        <p>4 sets de 8-12 reps.</p>
+                    </div>
+                </div>
+                <div class="ejercicio_alt">
+                    <span>Prensa a 45 grados</span>
+                    <p>4 sets de 8-12 reps.</p>
+                </div>
+            </div>
+      
+            <div class="tarjeta_ejercicio bg_naranja">
+                <div class="contenido_tarjeta">
+                    <div class="info_ejercicio">
+                        <span>Curl femoral de pie</span>
+                        <p>4 sets de 8-12 reps.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta_ejercicio bg_naranja">
+                <div class="contenido_tarjeta">
+                    <div class="info_ejercicio">
+                        <span>Elevaciones de gemelos</span>
+                        <p>4 sets de 8-12 reps. Preferiblemente, en la máquina para hacer gemelo de pie, pero puede hacerse en una prensa a 45 grados.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta_ejercicio bg_amarillo">
+                <div class="contenido_tarjeta">
+                    <div class="info_ejercicio">
+                        <span>Crunch en polea</span>
+                        <p>4 sets de 8-12 reps.</p>
+                    </div>
+                </div>
+                <div class="ejercicio_alt">
+                    <span>Cardio</span>
+                    <p>Por si no te interesa hacer abdominales. Dedícale tanto tiempo como veas conveniente.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion" id="up3">
+            <h2>Tren superior <i class="fa-solid fa-square-3 fa-fw"></i></h2>
+            <div class="tarjeta_ejercicio bg_verde">
+                <div class="contenido_tarjeta">
+                    <div class="info_ejercicio">
+                        <span>Cruces en polea</span>
+                        <p>4 sets de 8-12 reps.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta_ejercicio bg_lila">
+                <div class="contenido_tarjeta">
+                    <div class="info_ejercicio">
+                        <span>Remo sentado</span>
+                        <p>4 sets de 8-12 reps.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta_ejercicio bg_azul">
+                <div class="contenido_tarjeta">
+                    <div class="info_ejercicio">
+                        <span>Curl con mancuernas</span>
+                        <p>4 sets de 8-12 reps. Si te desestabilizas al hacer las repeticiones, haz el ejercicio en banco.</p>
+                    </div>
+                </div>
+            </div>
+      
+            <div class="tarjeta_ejercicio bg_rojo">
+                <div class="contenido_tarjeta">
+                    <div class="info_ejercicio">
+                        <span>Elevaciones laterales</span>
+                        <p>4 sets de 8-12 reps. Con mancuernas o en polea (recomendado).</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta_ejercicio bg_azul">
+                <div class="contenido_tarjeta">
+                    <div class="info_ejercicio">
+                        <span>Press francés</span>
+                        <p>4 sets de 8-12 reps.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta_ejercicio bg_rojo">
+                <div class="contenido_tarjeta">
+                    <div class="info_ejercicio">
+                        <span>Extensión de muñeca</span>
+                        <p>4 sets de 8-12 reps. Es un curl de antebrazo prono apoyado en banco, con barra.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion" id="lw3">
+            <h2>Día de descanso</h2>
+            <div class="tarjeta_ejercicio bg_advertencia_dia">
+                <div class="contenido_tarjeta">
+                    <div class="info_ejercicio">
+                        <span><i class="fa-fw fa-light fa-snooze"></i> Descanso</span>
+                    </div>
+                </div>
+            </div>
+        </section>
         `
 };
     const contenedorRutina = document.querySelector('.selector_rutina');
@@ -662,8 +963,8 @@ const rutinas = {
     
         localStorage.setItem('rutina_seleccionada', rutina);
     
-        // solo cambiar el orden si la rutina es la PPL
-        // ESTO CAMBIA DESPUÉS! david tiene que pasarme todavía los ordenes de la rutina nueva.
+        // cambios pendientes! hay que "adaptar" el script que reordena la rutina a las nuevas rutinas FB y UP/LW
+        // para 6 jul, que si no david me mata
         if (rutina === 'ppl') {
             cambiarOrdenPPL();
         }
@@ -678,7 +979,7 @@ const rutinas = {
         });
     });
     
-    // cargado de rutina
+    // cargado de rutina (desde localstorage)
     const rutinaGuardada = localStorage.getItem('rutina_seleccionada');
     const rutinaOnLoad = rutinaGuardada || document.querySelector('input[name="rutina"]:checked')?.value;
     
