@@ -11,6 +11,17 @@ const rutinas = {
             <label><input type="radio" name="orden" value="orden3"> Orden <i class="fa-solid fa-square-3 fa-fw"></i></label>
         </div>
 
+        <div class="tarjeta_noticia bg_noticia_default">
+            <div class="noticia_contenido">
+                <div class="info_noticia">
+                    <span><i class="fa-solid fa-sparkles fa-fw"></i> ¡Nuevas rutinas!</span>
+                    <p>Después de casi 1 mes y medio sin actualizar la página, las nuevas rutinas han sido añadidas.</p>
+                    <p>Si sigues en la PPL (Push Pull Legs), dale una oportunidad a las nuevas rutinas, que han sido hechas por David y se suman a la anterior rutina, formando un total de 3 rutinas de las que elegir.</p>
+                    <p>Igual que antes, cada rutina tiene 3 ordenes diferentes, para evitar colapsar las máquinas y acelerar el ritmo de la rutina a la hora de ejecutarla en el gimnasio.</p>
+                </div>
+            </div>
+        </div>
+
         <section class="seccion" id="1">
             <h2>Pecho, tríceps y hombro <i class="fa-solid fa-square-1 fa-fw"></i></h2>
             <div class="tarjeta_ejercicio bg_verde">
@@ -337,14 +348,11 @@ const rutinas = {
         `,
 
     fullbody: `
-        <div class="tarjeta_noticia bg_noticia_default">
-            <div class="noticia_contenido">
-                <div class="info_noticia">
-                    <span><i class="fa-fw fa-solid fa-wrench"></i> En proceso</span>
-                    <p>La rutina <b>Full Body</b> está implementada, pero los órdenes, necesarios para que todos usemos la rutina sin retrasos, quedan pendientes.</p>
-                    <p>Los ordenes estarán terminados antes del <b>domingo, 6 de julio</b>.</p>
-                </div>
-            </div>
+        <h2><i class="fa-solid fa-arrow-up-square-triangle fa-fw"></i> Orden:</h2>
+        <div class="selector_orden">
+            <label><input type="radio" name="orden" value="orden1" checked> Orden <i class="fa-solid fa-square-1 fa-fw"></i></label>
+            <label><input type="radio" name="orden" value="orden2"> Orden <i class="fa-solid fa-square-2 fa-fw"></i></label>
+            <label><input type="radio" name="orden" value="orden3"> Orden <i class="fa-solid fa-square-3 fa-fw"></i></label>
         </div>
 
         <section class="seccion" id="fb1">
@@ -635,14 +643,11 @@ const rutinas = {
         `,
 
     uplw: `
-        <div class="tarjeta_noticia bg_noticia_default">
-            <div class="noticia_contenido">
-                <div class="info_noticia">
-                    <span><i class="fa-fw fa-solid fa-wrench"></i> En proceso</span>
-                    <p>La rutina <b>Upper/Lower</b> está implementada, pero los órdenes, necesarios para que todos usemos la rutina sin retrasos, quedan pendientes.</p>
-                    <p>Los ordenes estarán terminados antes del <b>domingo, 6 de julio</b>.</p>
-                </div>
-            </div>
+        <h2><i class="fa-solid fa-arrow-up-square-triangle fa-fw"></i> Orden:</h2>
+        <div class="selector_orden">
+            <label><input type="radio" name="orden" value="orden1" checked> Orden <i class="fa-solid fa-square-1 fa-fw"></i></label>
+            <label><input type="radio" name="orden" value="orden2"> Orden <i class="fa-solid fa-square-2 fa-fw"></i></label>
+            <label><input type="radio" name="orden" value="orden3"> Orden <i class="fa-solid fa-square-3 fa-fw"></i></label>
         </div>
 
         <section class="seccion" id="up1">
@@ -963,10 +968,16 @@ const rutinas = {
     
         localStorage.setItem('rutina_seleccionada', rutina);
     
-        // cambios pendientes! hay que "adaptar" el script que reordena la rutina a las nuevas rutinas FB y UP/LW
-        // para 6 jul, que si no david me mata
         if (rutina === 'ppl') {
             cambiarOrdenPPL();
+        }
+
+        if (rutina === 'fullbody') {
+            cambiarOrdenFB();
+        }
+
+        if (rutina === 'uplw') {
+            cambiarOrdenUPLW();
         }
     }    
     
