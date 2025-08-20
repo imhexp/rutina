@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 // rutinas (DESPLEGAR SOLO LO NECESARIO, MUY MUY LARGO, LAS RUTINAS EN EL SCRIPT ES **TEMPORAL**)
 // pendiente: cambiar formato de rutina a una API que sirva la rutina en formato JSON, para poder desarrollar el editor web de la rutina y evitar los espaguetis de códigos estos, que me rayan la cabeza
-// pendiente: devolver videos instructivos a cada ejercicio (a largo plazo y solo si el pendiente de arriba se concreta)
 const rutinas = {
     ppl: `
         <h2><i class="fa-solid fa-arrow-up-square-triangle fa-fw"></i> Orden:</h2>

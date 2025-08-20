@@ -194,49 +194,41 @@ h1 {
 .bg_verde {
     background-image: url(../../assets/img/tarjetas/pecho_card_bg.png);
     background-repeat: repeat-y;
-    background-position: center top;
 }
 
 .bg_azul {
     background-image: url(../../assets/img/tarjetas/brazo_card_bg.png);
     background-repeat: repeat-y;
-    background-position: center top;
 }
 
 .bg_rojo {
     background-image: url(../../assets/img/tarjetas/antebrazo_card_bg.png);
     background-repeat: repeat-y;
-    background-position: center top;
 }
 
 .bg_lila {
     background-image: url(../../assets/img/tarjetas/espalda_card_bg.png);
     background-repeat: repeat-y;
-    background-position: center top;
 }
 
 .bg_amarillo {
     background-image: url(../../assets/img/tarjetas/calentamiento_card_bg.png);
     background-repeat: repeat-y;
-    background-position: center top;
 }
 
 .bg_naranja {
     background-image: url(../../assets/img/tarjetas/pierna_card_bg.png);
     background-repeat: repeat-y;
-    background-position: center top;
 }
 
 .bg_advertencia_dia {
     background-image: url(../../assets/img/tarjetas/advertencia_dia_card_bg.png);
     background-repeat: repeat-y;
-    background-position: center top;
 }
 
 .bg_noticia_default {
     background-image: url(../../assets/img/tarjetas/noticia_card_bg.png);
     background-repeat: repeat-y;
-    background-position: center top;
 }
 
 
