@@ -13,10 +13,10 @@ const rutinas = {
         <div class="tarjeta_noticia bg_noticia_default">
             <div class="noticia_contenido">
                 <div class="info_noticia">
-                    <span><i class="fa-solid fa-sparkles fa-fw"></i> ¡Nuevas rutinas!</span>
-                    <p>Después de casi 1 mes y medio sin actualizar la página, las nuevas rutinas han sido añadidas.</p>
-                    <p>Si sigues en la PPL (Push Pull Legs), dale una oportunidad a las nuevas rutinas, que han sido hechas por David y se suman a la anterior rutina, formando un total de 3 rutinas de las que elegir.</p>
-                    <p>Igual que antes, cada rutina tiene 3 ordenes diferentes, para evitar colapsar las máquinas y acelerar el ritmo de la rutina a la hora de ejecutarla en el gimnasio.</p>
+                    <span><i class="fa-solid fa-sparkles fa-fw"></i> ¡Nueva rutina!</span>
+                    <p>Dos meses y medio sin nada nuevo... ya tocaba, la verdad.</p>
+                    <p>Rubén se une al desarrollo de las rutinas para el gimnasio con la rutina "PPL/UPLW", que combina ambas modalidades con sus ejercicios favoritos.</p>
+                    <p>Esta rutina tendrá solo dos órdenes y está recomendada a gente con más experiencia y conocimiento.</p>
                 </div>
             </div>
         </div>
@@ -947,6 +947,312 @@ const rutinas = {
                 </div>
             </div>
         </section>
+        `,
+    
+    ppl_uplw: `
+        <h2><i class="fa-solid fa-arrow-up-square-triangle fa-fw"></i> Orden:</h2>
+        <div class="selector_orden">
+            <label><input type="radio" name="orden" value="orden1" checked> Orden <i class="fa-solid fa-square-1 fa-fw"></i></label>
+            <label><input type="radio" name="orden" value="orden2"> Orden <i class="fa-solid fa-square-2 fa-fw"></i></label>
+        </div>
+
+        <div class="tarjeta_noticia bg_info">
+            <div class="noticia_contenido">
+                <div class="info_noticia">
+                    <span><i class="fa-solid fa-circle-info fa-fw"></i> Información</span>
+                    <p>Esta rutina es para más avanzados que sepan más de los ejercicios.</p>
+                    <p>Abreviaturas:</p>
+                    <p><b>· RIR 1:</b> A una repetición del fallo (parar justo antes de la repetición en la que creas que vas a fallar).</p>
+                    <p>Prioriza la técnica antes que el peso, pudiendo hacer entre 8-12 repeticiones con técnica adecuada y suponiendo un reto real en las últimas reps.</p>
+                    <p>Descansos de entre 1 minuto y 1:30 para ejercicios unilaterales, y en ejercicios no unilaterales entre 2 y 2:30.</p>
+                </div>
+            </div>
+        </div>
+
+        <section class="seccion" id="torso">
+            <h2>Torso</h2>
+            <div class="tarjeta_ejercicio bg_azul">
+                <div class="contenido_tarjeta">
+                    <div class="info_ejercicio">
+                        <span>Curl martillo en banco</span>
+                        <p>4 series a RIR 1.</p>
+                    </div>
+                </div>
+            </div>
+ 
+            <div class="tarjeta_ejercicio bg_verde">
+                <div class="contenido_tarjeta">
+                    <div class="info_ejercicio">
+                        <span>Cruces en polea</span>
+                        <p>3 series a RIR 1.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta_ejercicio bg_azul">
+                <div class="contenido_tarjeta">
+                    <div class="info_ejercicio">
+                        <span>Extensión de tríceps tras nuca</span>
+                        <p>4 series a RIR 1.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta_ejercicio bg_verde">
+                <div class="contenido_tarjeta">
+                    <div class="info_ejercicio">
+                        <span>Press de pecho para pectoral superior</span>
+                        <p>3 series a RIR 1 y una serie al fallo + pausa para descansar al final.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta_ejercicio bg_lila">
+                <div class="contenido_tarjeta">
+                    <div class="info_ejercicio">
+                        <span>Remo en T con agarre cerrado</span>
+                        <p>4 series a RIR 1.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta_ejercicio bg_lila">
+                <div class="contenido_tarjeta">
+                    <div class="info_ejercicio">
+                        <span>Remo gironda con agarre amplio</span>
+                        <p>2 series a RIR 1 y una serie al fallo.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion" id="leg1">
+            <h2>Leg/tren inferior <i class="fa-solid fa-square-1 fa-fw"></i></h2>
+            <div class="tarjeta_ejercicio bg_naranja">
+                <div class="contenido_tarjeta">
+                    <div class="info_ejercicio">
+                        <span>Extensión de cuádriceps</span>
+                        <p>2 series a RIR 1 y una serie al fallo.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta_ejercicio bg_naranja">
+                <div class="contenido_tarjeta">
+                    <div class="info_ejercicio">
+                        <span>Hack squat</span>
+                        <p>2 series a RIR 1 y una serie al fallo.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta_ejercicio bg_naranja">
+                <div class="contenido_tarjeta">
+                    <div class="info_ejercicio">
+                        <span>Gemelo de pie</span>
+                        <p>3 series a RIR 1.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta_ejercicio bg_naranja">
+                <div class="contenido_tarjeta">
+                    <div class="info_ejercicio">
+                        <span>Aductores (antes de hack squat)</span>
+                        <p>3 series a RIR 1 y una serie al fallo.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta_ejercicio bg_naranja">
+                <div class="contenido_tarjeta">
+                    <div class="info_ejercicio">
+                        <span>Curl femoral tumbado</span>
+                        <p>3 series a RIR 1 y una serie al fallo + pausa para descansar al final.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta_ejercicio bg_naranja">
+                <div class="contenido_tarjeta">
+                    <div class="info_ejercicio">
+                        <span>Hiperextensiones</span>
+                        <p>3 series a RIR 1.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion" id="push">
+            <h2>Push</h2>
+            <div class="tarjeta_ejercicio bg_verde">
+                <div class="contenido_tarjeta">
+                    <div class="info_ejercicio">
+                        <span>Press de banca</span>
+                        <p>3 series a RIR 1.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta_ejercicio bg_verde">
+                <div class="contenido_tarjeta">
+                    <div class="info_ejercicio">
+                        <span>Press inclinado con mancuernas</span>
+                        <p>3 series a RIR 1 y una serie al fallo.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta_ejercicio bg_verde">
+                <div class="contenido_tarjeta">
+                    <div class="info_ejercicio">
+                        <span>Aperturas peck-deck</span>
+                        <p>3 series a RIR 1.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta_ejercicio bg_azul">
+                <div class="contenido_tarjeta">
+                    <div class="info_ejercicio">
+                        <span>Extensión de tríceps en polea</span>
+                        <p>4 series a RIR 1.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta_ejercicio bg_azul">
+                <div class="contenido_tarjeta">
+                    <div class="info_ejercicio">
+                        <span>Press francés</span>
+                        <p>4 series a RIR 1.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta_ejercicio bg_rojo">
+                <div class="contenido_tarjeta">
+                    <div class="info_ejercicio">
+                        <span>Elevaciones laterales</span>
+                        <p>2 series a RIR 1 y una serie al fallo + pausa para descansar al final.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion" id="pull">
+            <h2>Pull</h2>
+            <div class="tarjeta_ejercicio bg_lila">
+                <div class="contenido_tarjeta">
+                    <div class="info_ejercicio">
+                        <span>Jalón al pecho (agarre neutro)</span>
+                        <p>3 series a RIR 1.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta_ejercicio bg_lila">
+                <div class="contenido_tarjeta">
+                    <div class="info_ejercicio">
+                        <span>Remo en T con agarre amplio</span>
+                        <p>3 series a RIR 1 y una serie al fallo + pausa para descansar al final.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta_ejercicio bg_lila">
+                <div class="contenido_tarjeta">
+                    <div class="info_ejercicio">
+                        <span>Remo sentado</span>
+                        <p>4 series a RIR 1.</p>
+                    </div>
+                </div>
+            </div>
+      
+            <div class="tarjeta_ejercicio bg_azul">
+                <div class="contenido_tarjeta">
+                    <div class="info_ejercicio">
+                        <span>Curl bayesian</span>
+                        <p>4 series a RIR 1.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta_ejercicio bg_azul">
+                <div class="contenido_tarjeta">
+                    <div class="info_ejercicio">
+                        <span>Curl predicador</span>
+                        <p>4 series a RIR 1.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta_ejercicio bg_rojo">
+                <div class="contenido_tarjeta">
+                    <div class="info_ejercicio">
+                        <span>Pájaros en peck-deck</span>
+                        <p>3 series al fallo + pausa para descansar al final de cada serie.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion" id="leg2">
+            <h2>Leg/tren inferior <i class="fa-solid fa-square-2 fa-fw"></i></h2>
+            <div class="tarjeta_ejercicio bg_naranja">
+                <div class="contenido_tarjeta">
+                    <div class="info_ejercicio">
+                        <span>Peso muerto rumano</span>
+                        <p>3 series a RIR 1.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta_ejercicio bg_naranja">
+                <div class="contenido_tarjeta">
+                    <div class="info_ejercicio">
+                        <span>Curl femoral sentado</span>
+                        <p>2 series a RIR 1 y 2 series al fallo + pausa para descansar al final.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta_ejercicio bg_naranja">
+                <div class="contenido_tarjeta">
+                    <div class="info_ejercicio">
+                        <span>Gemelo de pie</span>
+                        <p>2 series a RIR 1 y una serie al falo.</p>
+                    </div>
+                </div>
+            </div>
+      
+            <div class="tarjeta_ejercicio bg_naranja">
+                <div class="contenido_tarjeta">
+                    <div class="info_ejercicio">
+                        <span>Aductores (antes de prensa)</span>
+                        <p>4 series a RIR 1.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta_ejercicio bg_naranja">
+                <div class="contenido_tarjeta">
+                    <div class="info_ejercicio">
+                        <span>Prensa a 45 grados</span>
+                        <p>3 series a RIR 1.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta_ejercicio bg_naranja">
+                <div class="contenido_tarjeta">
+                    <div class="info_ejercicio">
+                        <span>Extensión de cuádriceps</span>
+                        <p>3 series a RIR 1 y una serie al fallo.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
         `
 };
     const contenedorRutina = document.querySelector('.selector_rutina');
@@ -977,6 +1283,10 @@ const rutinas = {
 
         if (rutina === 'uplw') {
             cambiarOrdenUPLW();
+        }
+
+        if (rutina === 'ppl_uplw') {
+            cambiarOrdenPPL_UPLW();
         }
     }    
     

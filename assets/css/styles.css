@@ -154,10 +154,16 @@ h1 {
     background: #212020;
     border-radius: 10px;
     display: flex;
+    flex-wrap: wrap; /* arreglillo ahora que hay mas rutinas que antes, para que pase a la siguiente linea si no entra */
     justify-content: center;
     gap: 18px;
     font-size: 19px;
     color: rgba(255, 255, 255, 0.8);
+}
+
+.selector_rutina label:last-child {
+    flex-basis: 100%;
+    text-align: center;
 }
 
 .selector_orden {
@@ -228,6 +234,11 @@ h1 {
 
 .bg_noticia_default {
     background-image: url(../../assets/img/tarjetas/noticia_card_bg.png);
+    background-repeat: repeat-y;
+}
+
+.bg_info {
+    background-image: url(../../assets/img/tarjetas/info_card_bg.png);
     background-repeat: repeat-y;
 }
 
