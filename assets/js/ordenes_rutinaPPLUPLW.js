@@ -31,7 +31,6 @@ function cambiarOrdenPPL_UPLW() {
 
     // cargado del orden previamente guardado desde localStorage
     const ordenPrecargado = localStorage.getItem('orden_seleccionado');
-    const ordenOnLoad = ordenGuardado || document.querySelector('input[name="orden"]:checked')?.value;
     let ordenGuardado;
 
     if (ordenPrecargado === 'orden3') {
@@ -39,6 +38,8 @@ function cambiarOrdenPPL_UPLW() {
     } else {
         ordenGuardado = ordenPrecargado;
     }
+
+    const ordenOnLoad = ordenGuardado || document.querySelector('input[name="orden"]:checked')?.value;
 
     // si se ha podido cargar desde localStorage, seleccionar el radio según lo guardado
     if (ordenGuardado) {

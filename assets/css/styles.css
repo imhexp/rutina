@@ -123,6 +123,49 @@ h1 {
     flex-direction: column;
 }
 
+.tarjeta_consejos {
+    background-repeat: no-repeat;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.separador {
+    width: 100%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.5);
+    margin-bottom: 20px;
+}
+
+
+.consejos_contenido {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+    .consejos_contenido span {
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+    .consejos_contenido p {
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.72);
+        margin-top: 4px;
+        margin-right: 20px;
+    }
+
+.info_consejos {
+    display: flex;
+    flex-direction: column;
+}
+
 .info_ejercicio {
     display: flex;
     flex-direction: column;

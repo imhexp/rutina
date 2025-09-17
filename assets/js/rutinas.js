@@ -631,9 +631,9 @@ const rutinas = {
 
         <section class="seccion" id="fb6">
             <h2>Full body <i class="fa-solid fa-square-6 fa-fw"></i></h2>
-            <div class="tarjeta_ejercicio bg_advertencia_dia">
-                <div class="contenido_tarjeta">
-                    <div class="info_ejercicio">
+            <div class="tarjeta_consejos bg_advertencia_dia">
+                <div class="consejos_contenido">
+                    <div class="info_consejos">
                         <span><i class="fa-fw fa-light fa-snooze"></i> Descanso</span>
                     </div>
                 </div>
@@ -939,9 +939,9 @@ const rutinas = {
 
         <section class="seccion" id="lw3">
             <h2>Día de descanso</h2>
-            <div class="tarjeta_ejercicio bg_advertencia_dia">
-                <div class="contenido_tarjeta">
-                    <div class="info_ejercicio">
+            <div class="tarjeta_consejos bg_advertencia_dia">
+                <div class="consejos_contenido">
+                    <div class="info_consejos">
                         <span><i class="fa-fw fa-light fa-snooze"></i> Descanso</span>
                     </div>
                 </div>
@@ -971,6 +971,17 @@ const rutinas = {
 
         <section class="seccion" id="torso">
             <h2>Torso</h2>
+            <div class="tarjeta_consejos bg_advertencia_dia">
+                <div class="consejos_contenido">
+                    <div class="info_consejos">
+                        <span><i class="fa-solid fa-solid fa-comments"></i> Consejos</span>
+                        <p>En la extensión de tríceps tras nunca, poner la polea a la altura de la cadera y cerrar codos.</p>
+                        <p>En los ejercicios de espalda, si se nos resbala el agarre usar straps es recomendable.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="separador"></div>
+
             <div class="tarjeta_ejercicio bg_azul">
                 <div class="contenido_tarjeta">
                     <div class="info_ejercicio">
@@ -1028,6 +1039,17 @@ const rutinas = {
 
         <section class="seccion" id="leg1">
             <h2>Leg/tren inferior <i class="fa-solid fa-square-1 fa-fw"></i></h2>
+            <div class="tarjeta_consejos bg_advertencia_dia">
+                <div class="consejos_contenido">
+                    <div class="info_consejos">
+                        <span><i class="fa-solid fa-solid fa-comments"></i> Consejos</span>
+                        <p>En la extensión de cuádriceps echar el asiento hacia atrás e intentar no despegar los glúteos del sillín.</p>
+                        <p>En el hack squat, bajar los pies (no ponerlos en las esquinas de la base de empuje) y juntarlos un poco para enfocarlo mejor al cuádriceps.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="separador"></div>
+
             <div class="tarjeta_ejercicio bg_naranja">
                 <div class="contenido_tarjeta">
                     <div class="info_ejercicio">
@@ -1085,6 +1107,18 @@ const rutinas = {
 
         <section class="seccion" id="push">
             <h2>Push</h2>
+            <div class="tarjeta_consejos bg_advertencia_dia">
+                <div class="consejos_contenido">
+                    <div class="info_consejos">
+                        <span><i class="fa-solid fa-solid fa-comments"></i> Consejos</span>
+                        <p>Calentar hombro antes de entrenar con mancuernas, con banda elástica o con pesos bajos.</p>
+                        <p>En la extensión de tríceps, hacerla de espaldas y apoyado si es posible para una mejor estabilidad.</p>
+                        <p>En press francés lo mejor es bajar por detrás de la cabeza.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="separador"></div>
+
             <div class="tarjeta_ejercicio bg_verde">
                 <div class="contenido_tarjeta">
                     <div class="info_ejercicio">
@@ -1142,6 +1176,16 @@ const rutinas = {
 
         <section class="seccion" id="pull">
             <h2>Pull</h2>
+            <div class="tarjeta_consejos bg_advertencia_dia">
+                <div class="consejos_contenido">
+                    <div class="info_consejos">
+                        <span><i class="fa-solid fa-solid fa-comments"></i> Consejos</span>
+                        <p>En curl bayesian, situar la polea a la altura de las rodillas y mantener el codo por detrás del cuerpo.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="separador"></div>
+
             <div class="tarjeta_ejercicio bg_lila">
                 <div class="contenido_tarjeta">
                     <div class="info_ejercicio">
